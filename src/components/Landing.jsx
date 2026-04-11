@@ -16,12 +16,12 @@ export const Landing = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div className="max-w-5xl mx-auto px-6 md:px-8 py-12 md:py-16">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center md:items-start mb-16 gap-12">
-          <div className="flex flex-col items-center flex-shrink-0 w-full max-w-xs md:max-w-none">
+        <div className="flex flex-col lg:flex-row items-center md:items-start justify-center mb-16 gap-12">
+          <div className="flex flex-col items-center flex-shrink-0 w-full max-w-xs md:max-w-[260px]">
             <div className="relative mb-8">
-              <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
                   src={headshot}
                   alt={`${fullName} headshot`}
@@ -48,9 +48,9 @@ export const Landing = () => {
             )}
           </div>
 
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 w-full max-w-3xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
-              <h1 className="text-5xl font-bold text-gray-900">{fullName}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900">{fullName}</h1>
               <div className="flex flex-row flex-wrap gap-4">
                 {links.map((link, index) => (
                   <a
@@ -79,12 +79,12 @@ export const Landing = () => {
         {/* Jobs Row */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold text-gray-900 mb-6">Experience</h3>
-          <div className="flex gap-4 overflow-x-auto pb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {experience.map((job, index) => (
               <div
                 key={index}
                 onClick={() => handleJobClick(index)}
-                className={`relative flex-shrink-0 w-80 p-6 rounded-xl shadow-md transition-all duration-300 cursor-pointer ${
+                className={`relative w-full p-6 rounded-xl shadow-md transition-all duration-300 cursor-pointer ${
                   index === 0
                     ? "bg-blue-50 border-2 border-blue-500 ring-2 ring-blue-300 hover:shadow-xl hover:scale-105"
                     : "bg-white hover:shadow-lg hover:scale-105"
