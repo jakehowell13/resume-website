@@ -18,10 +18,10 @@ export const Landing = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-6xl mx-auto px-8 py-16">
         {/* Hero Section */}
-        <div className="flex flex-row items-start mb-16 gap-12">
-          <div className="flex flex-col items-center flex-shrink-0">
+        <div className="flex flex-col md:flex-row items-center md:items-start mb-16 gap-12">
+          <div className="flex flex-col items-center flex-shrink-0 w-full max-w-xs md:max-w-none">
             <div className="relative mb-8">
-              <div className="w-70 h-70 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
                   src={headshot}
                   alt={`${fullName} headshot`}
@@ -49,9 +49,9 @@ export const Landing = () => {
           </div>
 
           <div className="flex flex-col flex-1">
-            <div className="flex flex-row items-center justify-between mb-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
               <h1 className="text-5xl font-bold text-gray-900">{fullName}</h1>
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row flex-wrap gap-4">
                 {links.map((link, index) => (
                   <a
                     key={index}

@@ -35,7 +35,7 @@ export const JobHistory = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-indigo-500 rounded-full"></div>
+          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-indigo-500 rounded-full"></div>
 
           {/* Experience Cards */}
           <div className="flex flex-col gap-6">
@@ -43,7 +43,7 @@ export const JobHistory = () => {
               <div 
                 key={index} 
                 ref={el => jobRefs.current[index] = el}
-                className="relative pl-24"
+                className="relative pl-16 md:pl-24"
               >
                 {/* Timeline Dot */}
                 <div className="absolute -left-3 top-6 w-6 h-6 bg-blue-500 rounded-full border-4 border-blue-50 shadow-lg"></div>

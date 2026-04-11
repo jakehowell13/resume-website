@@ -120,18 +120,24 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   html,
   body {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100%;
   }
   body {
     @apply bg-background text-foreground;
-    }
+    overflow-x: hidden;
+  }
   html {
     @apply font-sans;
-    }
+  }
 }
 
 .parent-content-container {
