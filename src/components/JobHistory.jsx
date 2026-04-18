@@ -28,7 +28,7 @@ export const JobHistory = () => {
             Experience
           </h1>
           <p className="text-lg text-gray-700">
-            {experience.length} years of professional experience
+            5 years of professional experience
           </p>
         </div>
 
