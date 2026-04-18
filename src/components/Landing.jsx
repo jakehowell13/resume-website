@@ -120,6 +120,22 @@ export const Landing = () => {
           </div>
         </div>
 
+        {/* Why I Built This Site */}
+        <div className="mb-12">
+          <div className="rounded-3xl bg-white border border-slate-200 p-8 shadow-lg shadow-slate-200/40">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 text-xl font-bold">
+                ?
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500 font-semibold">Why this site</p>
+                <h3 className="text-2xl font-bold text-slate-900">What I wanted to show</h3>
+              </div>
+            </div>
+            <p className="text-base leading-8 text-slate-700">{resumeContent.why}</p>
+          </div>
+        </div>
+
         {/* Current Position Highlight */}
         {/* <div className="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition-all duration-300">
           <div className="flex flex-col items-center">

@@ -11,7 +11,7 @@ export const resumeContent = {
     links: [
         {
             label: "GitHub",
-            url: ""
+            url: "https://github.com/jakehowell13/resume-website"
         },
         {
             label: "LinkedIn",
@@ -19,6 +19,7 @@ export const resumeContent = {
         }
     ],
     summary: "Full-stack software engineer with 5+ years of experience designing, building, and deploying scalable applications using .NET, C#, React, and SQL Server. Proven ability to own features end-to-end, from architecture and development to deployment and optimization, with a focus on cloud-native solutions in Microsoft Azure. Experienced in building RESTful APIs, optimizing data pipelines with complex stored procedures, and modernizing legacy systems into efficient, maintainable platforms. Demonstrated technical leadership through project ownership, mentoring junior developers, and driving cross-functional collaboration. Skilled in DevOps practices, CI/CD pipeline development, and integrating AI-driven solutions to enhance application performance and business workflows.",
+    why: "I built this site as a polished, modern extension of my resume—one that not only presents my experience, but reflects how I approach building software. While it covers much of the same information as my LinkedIn and resume, the site itself is part of the story: a demonstration of my ability to design intuitive, visually engaging experiences that make complex information easy to understand. As a full stack developer, I enjoy solving meaningful problems, supporting teams, and finding thoughtful ways to present data in a way that feels both useful and seamless to the user.",
     experience: [
         {
             company: "Arizona Diamondbacks",
